@@ -1,0 +1,141 @@
+body{
+    text-align:center;
+    color:#000f08;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+nav{
+    text-align: center;
+
+    width:100vw;
+}
+nav i{
+    fill:black;
+}
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin:0 1em;
+    vertical-align: middle;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.75em;
+    margin-bottom: 0.25em;
+}
+h2{
+    font-weight:700;
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size:1.75em;
+}
+h5{
+    font-size:1.25;
+}
+
+.subtitulo, h4, h5{
+    font-weight: 400;
+}
+.oscuro{
+    background: #000f08; 
+    color: #ffffff;
+}
+
+.oscuro a{
+    color:#ffffff;
+    text-decoration:none;
+
+}
+
+.hero-section { 
+    text-align: center;
+    background-image: url('../img/fondo_web.png'); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #ffffff;
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+aside{
+    background-color: antiquewhite;
+
+}
+aside h1 , section h1 {
+    font-weight: 10;
+    font-size:2rem;
+    text-align: left;
+    margin-left: 1rem;
+    
+}
+aside img{
+    width:90%;
+    height: 5rem;
+    margin: .5rem 0;
+}
+
+.logo{
+    width:90%;
+    height: 15rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+aside h3,section h3{
+    font-weight: 3;
+    font-size:1rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+aside p , section p{
+    text-align: left;
+    margin: 2rem;
+}
+section{
+    grid-column: 2/4;
+
+}
+
+footer {
+    padding:1rem;
+}
+@media screen and (max-width: 768px) {
+    .contenedor aside , section{
+        grid-column: 1 / -1;
+    }
+    
+    nav ul li{
+        display: block;
+        margin:0 1em;
+    }
+    .icono{
+        width:2rem;
+        
+    }
+
+        
+}
+    
+
